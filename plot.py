@@ -23,7 +23,7 @@ class Plotter():
     #run cpp algorithm
     def run_cpp(self):
 
-        process = subprocess.Popen(['./algorithm'], stdout=subprocess.PIPE)
+        process = subprocess.Popen(['./mandelbrot'], stdout=subprocess.PIPE)
         output = process.communicate()[0]
         return np.fromstring(output, sep=' ').reshape((800, 800))
 
@@ -38,7 +38,7 @@ class Plotter():
 
     #run methode
     def run(self):
-        
+        self.compile_cpp('mandelbrot.cpp','mandelbrot')
         data = self.run_cpp()
         self.plot_data(data)
 
