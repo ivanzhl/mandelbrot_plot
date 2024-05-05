@@ -5,9 +5,11 @@
 const int WIDTH = 800;
 const int HEIGHT = 800;
 const double MIN_RE = -2.5;
-const double MAX_RE = 1.0;
+const double MAX_RE = -2.6;
 const double MIN_IM = -1.0;
-const double MAX_IM = 1.0;
+const double MAX_IM = -1.2;
+
+ 
 
 
 //algorithm for checking if c is in mandelbrot set
@@ -32,7 +34,7 @@ int main() {
             double re = -2.5 + x * (3.5 / WIDTH);
             double im = -1.0 + y * (2.0 / HEIGHT);
             std::complex<double> c(re, im);
-            std::cout << is_in_set(c,1000) << ' ';
+            std::cout << is_in_set(c,100) << ' ';
         }
         std::cout << '\n';
     }
