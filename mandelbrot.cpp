@@ -32,7 +32,7 @@ int main() {
             double re = -2.5 + x * (3.5 / WIDTH);
             double im = -1.0 + y * (2.0 / HEIGHT);
             std::complex<double> c(re, im);
-            std::cout << is_in_set(c,100) << ' ';
+            std::cout << is_in_set(c,1000) << ' ';
         }
         std::cout << '\n';
     }
