@@ -32,10 +32,10 @@ class Plotter():
     #plot data with matplotlib
     def plot_data(self,data):
 
-        plt.figure(frameon=False)  # Erstelle ein neues Figure-Objekt ohne Rahmen
+        plt.figure(frameon=False)  
         plt.imshow(data, cmap='magma', extent=[-2.5, 1.0, -1.0, 1.0], aspect='equal')
         plt.subplots_adjust(left=0, right=1, top=1, bottom=0)
-        plt.axis('off')  # Achsen ausschalten
+        plt.axis('off')  #
         plt.show()
 
     #run methode

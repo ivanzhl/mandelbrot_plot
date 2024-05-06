@@ -5,9 +5,9 @@
 const int WIDTH = 800;
 const int HEIGHT = 800;
 const double MIN_RE = -2.5;
-const double MAX_RE = -2.6;
+const double MAX_RE = 1.0;
 const double MIN_IM = -1.0;
-const double MAX_IM = -1.2;
+const double MAX_IM = 1.0;
 
  
 
